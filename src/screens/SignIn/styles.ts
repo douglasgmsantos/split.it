@@ -7,6 +7,11 @@ export const styles = StyleSheet.create({
     display: 'flex',
     height: '100%'
   },
+  containerLoading: {
+    display: 'flex',
+    justifyContent:'center',
+    height: '100%'
+  },
   contentMessage: {
     flex: 1,
     backgroundColor: theme.colors.primary,

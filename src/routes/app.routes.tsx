@@ -1,5 +1,5 @@
+import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationContainer } from '@react-navigation/native';
 
 import { theme } from '../global/styles/theme';
 
@@ -9,19 +9,19 @@ const { Navigator, Screen } = createStackNavigator();
 
 export function AppRoutes() {
   return(
-    <NavigationContainer>
       <Navigator
         screenOptions={{
+          headerShown: false,
           cardStyle: {
-            backgroundColor: theme.colors.secondary100
+            backgroundColor: theme.colors.primary
           }
         }}
       >     
         <Screen 
+         
           name="Home"
           component={Home}
         />
       </Navigator>
-    </NavigationContainer>
   )
 }
