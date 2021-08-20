@@ -3,7 +3,7 @@ export const theme = {
       primary: '#3ddc97',
       
       overlay: 'rgba(0,0,0,0.7)',
-      highlight: '#256eff',
+      highlight: '#4a525a',
       heading: '#fcfcfc',
       line: '#46237a',
       on: '#ff495c',

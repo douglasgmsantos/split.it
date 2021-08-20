@@ -20,7 +20,7 @@ export function ButtonSign({ title, iconName, ...rest } : Props){
       {...rest }
     >
       <View style={styles.iconWrapper}>
-        <Fontisto name={iconName as 'email'} size={24} color={theme.colors.line} />
+        <Fontisto name={iconName as 'email'} size={24} color={theme.colors.on} />
       </View>
 
       <Text style={styles.title}>

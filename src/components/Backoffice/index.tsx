@@ -5,16 +5,18 @@ import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
 
 type Props = {
+  colors ?: string[];
   children: ReactNode;
 }
 
-export function Background({ children }: Props) {
+export function Background({ colors, children }: Props) {
   const { primary, light } = theme.colors;
 
   return (
     <LinearGradient
       style={styles.container}
-      colors={[primary, light]}
+      colors={Boolean(colors) ? colors!! : [primary, light]}
+      
     >
       {children}
     </LinearGradient>
